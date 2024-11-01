@@ -1,0 +1,132 @@
+body {
+    font-family: 'Fira Code', monospace;
+    /*font-size: 18px;*/
+    line-height: 1.6;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #252526;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+    .sidebar h2 {
+        color: #dcdcaa;
+    }
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    margin: 10px 0;
+}
+
+    .social-icons img {
+        width: 40px; /* Increase the size of the icons */
+        height: 40px;
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.1); /* Slight increase in size */
+        transition: transform 0.2s ease-in-out;
+    }
+
+.sidebar a {
+    color: #569cd6;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+    /* Style for the current page link */
+    .sidebar a.current {
+        color: #6a9955; /* Comment green color */
+        font-style: italic;
+    }
+
+        .sidebar a.current::before {
+            content: "// ";
+            color: #6a9955; /* Comment green color */
+        }
+
+.content {
+    margin-left: 240px; /* Increase left margin to create space */
+    padding: 20px;
+    width: calc(100% - 240px); /* Adjust width to match new margin */
+    
+}
+
+.portfolio p {
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 20px;
+    border: 4px solid #4ec9b0; /* Subtle colored border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #4ec9b0;
+}
+
+h2 {
+    color: #dcdcaa;
+}
+
+p {
+    color: #d4d4d4;
+}
+
+a:hover {
+    color: #d7ba7d;
+}
+
+/* Link styles */
+a:link, a:visited {
+    color: #569cd6; /* Pastel blue, or choose another color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d7ba7d; /* Light orange for hover effect */
+}
+
+a:active {
+    color: #d7ba7d; /* Same color for when the link is active */
+}
+
+.project-box {
+    background-color: #2d2d2d; /* Slightly different background color */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*.project-box:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}*/
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.launch-date {
+    margin-left: 10px;
+    text-align: right;
+    color: #d4d4d4; /* Adjust the color to match your site's theme */
+}
