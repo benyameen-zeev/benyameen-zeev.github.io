@@ -5,12 +5,14 @@ body {
     background-color: #1e1e1e;
     color: #d4d4d4;
     margin: 0;
+    padding: 0;
     display: flex;
+    min-height: 100vh;
 }
 
 .sidebar {
     width: 200px;
-    padding: 20px;
+    padding: 2rem;
     background-color: #252526;
     height: 100vh;
     position: fixed;
@@ -57,9 +59,9 @@ body {
 
 .content {
     margin-left: 240px; /* Increase left margin to create space */
-    padding: 20px;
+    padding: 2rem;
     width: calc(100% - 240px); /* Adjust width to match new margin */
-    
+    flex: 1;
 }
 
 .portfolio p {
@@ -138,4 +140,60 @@ a:active {
     margin: 15px auto; /* Changed to auto for horizontal centering */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     display: block; /* Added to enable margin auto centering */
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 8px 16px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablet optimization */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .sidebar {
+        min-width: 200px;
+    }
+
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
 }
