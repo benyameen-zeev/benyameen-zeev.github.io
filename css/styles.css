@@ -130,3 +130,12 @@ a:active {
     text-align: right;
     color: #d4d4d4; /* Adjust the color to match your site's theme */
 }
+
+.project-image {
+    width: 60%; /* Reduced from 100% */
+    height: auto;
+    border-radius: 8px;
+    margin: 15px auto; /* Changed to auto for horizontal centering */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block; /* Added to enable margin auto centering */
+}
