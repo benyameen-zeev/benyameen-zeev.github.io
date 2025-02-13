@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Nissley Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Benjamin Nissley</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/benjamin-nissley-0795001b2/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/benyameen-zeev" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="mailto:benyameen.nissley@gmail.com">
+                <img src="images/email.png" alt="Email">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">about</a>
+            <a href="projects.html">projects</a>
+            <a href="portfolio.html">portfolio</a>
+        </nav>
+    </div>
+
+    <div class="content">
+        <section id="about">          
+            <h1>planet colony devblog</h1>
+            <p>Development updates for my top-down colony builder project</p>
+        </section>
+
+        <div class="description-box">
+            <p>A top-down colony builder game made with Godot 4. The game draws inspiration from titles like 
+                Rimworld and SimEarth, focusing on colony management and survival mechanics. I used to be a big fan 
+                of SimEarth, but like many of Maxis early "Sim" titles it was more of an interesting demo than a full-fledged 
+                game (I'm looking at you too, SimAnt). <br>
+                My goal for this project is to create a game that incorporates base/colony building and survival mechanics
+                (hence my reference to Rimworld), without the focus on individual colonists. The focus is on the colony as 
+                a whole, producing resources from the planet, building infrastructure to support the colony, and developing
+                a culture and society. <br>
+                One of the main goals for the player is to terraform the planet - and this is where my SimEarth inspiration
+                comes in. The game is set in a post-Earth universe (nuclear apocalypse, maybe?) and mankind is forced to rebuild
+                on other planets. <br>
+                Eventually, my aim is to incorporate a "soft multiplayer" system, where players do not interact with each other
+                in real-time, but can interact with each other's colonies (trade, sharing technology, warfare, etc.). I plan
+                to host the "universe" on a server. The universe is basically a database representing the grids of each planet
+                and the objects on the grid (placed by players). The actual gameplay occurs entirely on the client side, requiring
+                an internet connection only to get and post updates to the database. <br>
+                I don't have much free time these days, but the idea for this project has been stuck in my head for a couple
+                of years now. I'm hoping that starting this devblog will help me stay motivated to work on it. 
+                If you have any feedback or suggestions, please don't hesitate to contact me :) 
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h2>January 13, 2025</h2>
+            <img src="images/devBlogs/planet/initial.png" alt="Initial Development Screenshot" class="project-image">
+            <p>It might not look like much, but this screenshot is the result of a few weeks' worth of trial and error. 
+                After returning to Godot after a few years of not using it, I had to familiarize myself with the latest
+                version (4.3). What you're seeing here is a succesful attempt at implementing autotiling in runtime. 
+                In other words, I had to create a tileset of the "wall", including every possible configuration of adjacent
+                wall pieces (like intersections, ends, corners, etc.). I used Asesprite for designing the pixel art
+                (all of which are placeholders for now - yes I know they look ugly) and tilesetter for generating the "blob"
+                for use in godot. With the current setup, as the player I'm able to click anywhere on the grid to place wall
+                objects, and the wall pieces will automatically have the correct autotiling applied to them. 
+            </p>
+            <div class="link-container">
+                <p class="launch-date">Posted: 01/13/2025</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

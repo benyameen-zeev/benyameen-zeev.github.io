@@ -73,7 +73,7 @@ body {
     height: auto;
     border-radius: 50%;
     display: block;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto; /* Changed to center horizontally while keeping bottom margin */
     border: 4px solid #4ec9b0; /* Subtle colored border */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -196,4 +196,12 @@ a:active {
         max-width: 100%;
         height: auto;
     }
+}
+
+.description-box {
+    background-color: #252526;  /* Same as sidebar color for consistency */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
