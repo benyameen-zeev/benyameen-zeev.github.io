@@ -70,12 +70,13 @@ body {
 
 .profile-image {
     width: 250px;
-    height: auto;
+    height: 250px; /* Set equal height to width for perfect circle */
     border-radius: 50%;
     display: block;
-    margin: 0 auto 20px auto; /* Changed to center horizontally while keeping bottom margin */
-    border: 4px solid #4ec9b0; /* Subtle colored border */
+    margin: 0 auto 20px auto;
+    border: 4px solid #4ec9b0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover; /* This ensures the image fills the circle without distortion */
 }
 
 h1 {
