@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+} 
